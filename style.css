@@ -50,6 +50,18 @@ body {
     border-radius: 100%;
     z-index: 10;
 }
+.nike {
+    filter: invert(1);
+}
+.nike {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 35%;
+    width: 40px;
+    height: 30px;
+    z-index: 9;
+}
 
 .hechter {
     position: absolute;
@@ -60,6 +72,22 @@ body {
     height: 100%;
     background-color: red;
     z-index: 1;
+}
+.hechter .qatar, .airways {
+    color: white;
+}
+.hechter .qatar {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+
+}
+.hechter .airways {
+    position: absolute;
+    top: 45%;
+    left: 36%;
 }
 .hechter::before {
     content: "";
@@ -100,4 +128,12 @@ body {
     right: -22%;
     transform: rotate(40deg);
 
+}.armpits-right::before {
+    content: "BEYOND";
+    position: absolute;
+    transform: rotate(-90deg);
+    bottom: 40%;
+    right: -10%;
+    color: white;
+    font-weight: bold;
 }
