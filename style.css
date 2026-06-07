@@ -1,0 +1,103 @@
+html {
+    background-color: black;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    position: relative;
+    width: 50%;
+    height: 75%;
+    background-color: blue;
+    border-radius: 15% 15% 0 0;
+}
+
+.neck {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 20%;
+    background-color:rgb(1, 1, 78);
+    border-radius: 70% 70% 70% 70%;
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgb(1, 1, 78);
+    border: 1px solid white;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+.hechter {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    z-index: 1;
+}
+.hechter::before {
+    content: "";
+    position:absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    z-index: 1;
+}
+.hechter::after {
+    content: "";
+    position:absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background-color: white;
+    right: 0;
+    z-index: 1;
+}
+.armpits-left {
+    position: absolute;
+    width: 45%;
+    height: 20%;
+    background-color: blue;
+    top: 9%;
+    left: -22%;
+    transform: rotate(-40deg);
+
+}
+.armpits-right{
+    position: absolute;
+    width: 45%;
+    height: 20%;
+    background-color: blue;
+    top: 9%;
+    right: -22%;
+    transform: rotate(40deg);
+
+}
